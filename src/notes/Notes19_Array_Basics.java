@@ -52,7 +52,7 @@ public class Notes19_Array_Basics {
 		 *   double[] = 0.0
 		 *   boolean[] = false
 		 *   char[] = 0  
-		 *   String[] = ""
+		 *   String[] = null  (a value that's technically nothing)
 		 * 
 		 */
 
@@ -161,7 +161,7 @@ public class Notes19_Array_Basics {
 		
 		
 		/*
-		 * Scanning an array in from a file
+		 * Scanning an array from a file
 		 * 
 		 * Note: The way you scan from a file depends
 		 *       on how the file is set up.  This method
@@ -177,20 +177,22 @@ public class Notes19_Array_Basics {
 		 * 		Must be in the ROOT PROJECT FOLDER!!!!
 		 *
 		 */
-		Scanner inFile = new Scanner(new File("notes19_input.txt"));
+		Scanner inFile = new Scanner(new File("notes19a_input.txt"));
 		
 		//first number is how many elements there are
+		int length = inFile.nextInt();
 		
-		double[] numbers = new double[inFile.nextInt()];
+		//create the array
+		double[] nums1 = new double[length];
 		
 		//loop through the array, scanning one at a time
-		for (int i = 0; i < numbers.length; i++) {
-			numbers[i] = inFile.nextDouble();
+		for (int i = 0; i < nums1.length; i++) {
+			nums1[i] = inFile.nextDouble();
 		}
 		
 		//Just to show you they're there
-		for (double num : numbers) {
-			System.out.println(num);
+		for (int i = 0; i < nums1.length; i++) {
+			System.out.println(nums1[i]);
 		}
 		
 		

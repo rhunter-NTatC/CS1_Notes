@@ -2,17 +2,7 @@ package notes;
 
 /*
  * Notes: Aligned Arrays and For Each Loops
- * 
- * 
- * Aligned Arrays:
- * 	Definition:
- * 
- * 	Usefulness:
- * 
- * 
- * 
- * 
- * For Each Loops:
+ *
  * 
  */
 public class Notes20_AlignedArrays_ForEachLoops {
@@ -44,27 +34,28 @@ public class Notes20_AlignedArrays_ForEachLoops {
 		 * 
 		 */
 		
-		//find "Isaiah
-		int indexIsaiah = -1;
-		for (int i = 0; i < name.length; i++) {
+		//find "Isaiah" and print out his data
+		int indexIsaiah = 0;
+		for(int i = 0; i < name.length; i++) {
 			if (name[i].equals("Isaiah")) {
 				indexIsaiah = i;
 			}
 		}
-		System.out.println("Isiah is at index " + indexIsaiah);
-		System.out.println("He is " + age[indexIsaiah] + " years old");
+		System.out.println("Isaiah is at index " + indexIsaiah);
+		System.out.println("Isaiah is "+ age[indexIsaiah] + " years old.");
 		if (likesPink[indexIsaiah]) {
-			System.out.println("He likes pink.");
-		} else {
-			System.out.println("He does not like pink.");
+			System.out.println("Isaiah likes pink.");
+		}
+		else {
+			System.out.println("Isaiah does not like pink.");
 		}
 		
-		
 		//print out everyone that likes pink
-		System.out.print("People who like pink: ");
-		for (int i = 0; i < likesPink.length; i++) {
-			if (likesPink[i]) {
-				System.out.print(name[i] + " ");
+		//search through likesPink for true, and 
+		//print the name at that index
+		for(int i = 0; i < likesPink.length; i++) {
+			if(likesPink[i]) {
+				System.out.println(name[i] + " likes pink!");
 			}
 		}
 		
