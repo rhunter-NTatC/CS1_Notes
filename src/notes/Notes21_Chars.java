@@ -29,17 +29,19 @@ public class Notes21_Chars {
 		 * 	 double quotes are for Strings "a"
 		 * 
 		 */
-		
 		char x = 'a';
 		System.out.println(x);
 		
+		
 		char a = '⚽';
-		System.out.println(a);
-		System.out.println("\uD83C\uDF7C");
+		System.out.println(a + "\uD83E\uDD13 \uD83D\uDC5C");
+		
 		//What happens when I add 10 to a k?
 		x = 'k';
 		x += 10;
 		System.out.println(x);
+		
+		
 		
 		//How would I capitalize any lower case letter?
 		x -= 32;
@@ -57,13 +59,17 @@ public class Notes21_Chars {
 		 * Use ==
 		 * 
 		 */
+		if (x == 'a') {
+			System.out.println("It's an 'a'");
+		}
+		else if (x == 'U') {
+			System.out.println("It's an 'U'");
+		} 
 		
 		if (x == 85) {
-			System.out.println("It's a U");
+			System.out.println("It's an 'U'");
 		}
-		if (x == 'U') {
-			System.out.println("It's a U");
-		}
+		
 		
 		
 		
